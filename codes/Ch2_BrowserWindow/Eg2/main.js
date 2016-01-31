@@ -1,6 +1,5 @@
 /**
- * 1. Setting BrowserWindow width, height, minWidth, minHeight, maxWidth and maxHeight
- * 2. Setting BrowserWindow center, resizable
+ * 1. Setting BrowserWindow events
  */
 'use strict';
 
@@ -32,21 +31,47 @@ app.on('ready', function() {
    * Create the new browser window.
    * There are lot more options to set please visit: http://electron.atom.io/docs/v0.36.5/api/browser-window/#class-browserwindow
    */
-  mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
-    minWidth: 400,
-    minHeight: 300,
-    maxWidth: 1000,
-    maxHeight: 500,
-    resizable: true,
-    center: true
-  });
+  mainWindow = new BrowserWindow();
 
   /**
    * Load the index.html of the app.
    */
   mainWindow.loadURL('file://' + __dirname + '/index.html');
+
+  /**
+   * Emitted when the window gain focus.
+   */
+  mainWindow.on('focus', function() {
+    console.log("LOG: Window gain focus!");
+  });
+
+  /**
+   * Emitted when the window loses focus.
+   */
+  mainWindow.on('blur', function() {
+    console.log("LOG: Window loses focus!");
+  });
+
+  /**
+   * Emitted when the window is maximize.
+   */
+  mainWindow.on('maximize', function() {
+    console.log("LOG: Window is maximize!");
+  });
+
+  /**
+   * Emitted when the window is minimize.
+   */
+  mainWindow.on('minimize', function() {
+    console.log("LOG: Window is minimize!");
+  });
+
+  /**
+   * Emitted when the window is getting resized.
+   */
+  mainWindow.on('resize', function() {
+    console.log("LOG: Window is getting resized!");
+  });
 
   /**
    * Emitted when the window is closed.
@@ -58,5 +83,7 @@ app.on('ready', function() {
      */
     mainWindow = null;
   });
+
+
 
 });
