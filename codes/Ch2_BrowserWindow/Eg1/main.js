@@ -30,6 +30,7 @@ app.on('ready', function() {
 
   /**
    * Create the new browser window.
+   * There are lot more options to set please visit: http://electron.atom.io/docs/v0.36.5/api/browser-window/#class-browserwindow
    */
   mainWindow = new BrowserWindow({
     width: 800,
