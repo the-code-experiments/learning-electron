@@ -1,3 +1,6 @@
+/**
+ * 1. Create BrowserWindow instance and loadURL
+ */
 'use strict';
 
 const electron = require('electron');
