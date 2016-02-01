@@ -40,18 +40,40 @@ app.on('ready', function() {
    */
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
+  /**
+   * Check whether the window is maximized (return a boolean)
+   */
   console.log("Is window maximized: ", mainWindow.isMaximized());
 
+  /**
+   * Check whether the window is minimized (return a boolean)
+   */
   console.log("Is window minimized: ", mainWindow.isMinimized());
 
+  /**
+   * Check whether the window is full screen mode (return a boolean)
+   */
   console.log("Is window fullscreen: ", mainWindow.isFullScreen());
 
+  /**
+   * Check whether the window is resizable (return a boolean)
+   */
   console.log("Is window resizable: ", mainWindow.isResizable());
 
+  /**
+   * Get current size of window (return an array)
+   */
   console.log("Get current window size: ", mainWindow.getSize());
 
+  /**
+   * Get current position of window (return an array)
+   */
   console.log("Get window position: ", mainWindow.getPosition());
 
+  /**
+   * Get current title of window (return a string)
+   * Note: The title of web page can be different from the title of the native window.
+   */
   console.log("Get window title: ", mainWindow.getTitle());
 
   /**
