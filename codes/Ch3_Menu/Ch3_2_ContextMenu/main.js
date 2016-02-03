@@ -1,5 +1,5 @@
 /**
- * 1. Setting BrowserWindow Instance Methods - 'set'
+ * 1. Building application contextmenu.
  */
 'use strict';
 
