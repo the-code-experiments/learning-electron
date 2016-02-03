@@ -1,8 +1,7 @@
 /**
  * 1. Building application menu.
- * 2. Setting menu shortcuts.
- * 3. Adding separator between submenu.
- * 4. Build application menu with template.
+ * 2. Adding separator between submenu.
+ * 3. Build application menu with template.
  */
 'use strict';
 
@@ -20,26 +19,21 @@ var menu = new Menu();
 var template = [{
   label: 'File',
   submenu: [{
-    label: 'New',
-    accelerator: 'CmdOrCtrl+N'
+    label: 'New'
   }, {
-    label: 'Open',
-    accelerator: 'CmdOrCtrl+O'
+    label: 'Open'
   }, {
     type: 'separator'
   }, {
-    label: 'Save',
-    accelerator: 'CmdOrCtrl+S'
+    label: 'Save'
   }, {
     label: 'Save As'
   }, {
     type: 'separator'
   }, {
-    label: 'Print',
-    accelerator: 'CmdOrCtrl+P'
+    label: 'Print'
   }, {
-    label: 'Quit',
-    accelerator: 'CmdOrCtrl+Q'
+    label: 'Quit'
   }]
 }, {
   label: 'Help',
