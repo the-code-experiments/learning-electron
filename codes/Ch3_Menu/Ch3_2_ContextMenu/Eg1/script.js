@@ -1,8 +1,6 @@
 /**
  * 1. Building application contextmenu.
- * 2. Setting menu shortcuts.
- * 3. Adding separator between submenu.
- * 4. Using MenuItem and to use menu append method.
+ * 2. Setting menuitem role.
  */
 'use strict';
 
@@ -19,10 +17,8 @@ var menu = new Menu();
  * Pass MenuItem instance as a menu append parameter.
  */
 menu.append(new MenuItem({
-  label: 'File',
-  click: function() {
-    console.log('item 1 clicked');
-  }
+  label: 'Minimize',
+  role: 'minimize'
 }));
 
 menu.append(new MenuItem({
@@ -30,9 +26,8 @@ menu.append(new MenuItem({
 }));
 
 menu.append(new MenuItem({
-  label: 'Help',
-  type: 'checkbox',
-  checked: true
+  label: 'Close',
+  role: 'close'
 }));
 
 window.addEventListener('contextmenu', function (e) {
