@@ -1,5 +1,5 @@
 /**
- * 1. Using showSaveDialog to open the "Save dialog box".
+ * 1. Using showSaveDialog to open the "Save dialog box by Filter".
  */
 'use strict';
 
