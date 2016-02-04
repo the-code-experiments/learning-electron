@@ -1,6 +1,7 @@
 /**
  * 1. Using showOpenDialog to open the "Open dialog box".
  * 2. Setting showOpenDialog to get the file path.
+ * 3. Appling filter while opening dialog box.
  */
 'use strict';
 
