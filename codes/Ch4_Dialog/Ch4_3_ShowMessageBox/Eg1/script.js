@@ -1,5 +1,7 @@
 /**
- * 1. Using showMessageBox.
+ * 1. Using default showMessageBox.
+ * 2. Setting message box title, message and detail.
+ * 3. Setting and triggering buttons with index and taking actions.
  */
 'use strict';
 
