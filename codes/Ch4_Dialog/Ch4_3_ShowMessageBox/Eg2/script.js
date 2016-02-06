@@ -1,5 +1,5 @@
 /**
- * 1. Using differnt showMessageBox.
+ * 1. Using different showMessageBox.
  */
 'use strict';
 
