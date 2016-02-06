@@ -1,7 +1,5 @@
 # learning-electron
 
-[The kit is under development; Things will get updated on daily basics]
-
 This training kit has been developed to learn the basics of [Electron.js](http://electron.atom.io/)
 
 ## Prerequisites
