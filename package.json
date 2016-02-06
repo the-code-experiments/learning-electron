@@ -1,7 +1,7 @@
 {
   "name": "learning-electron",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "This training kit has been developed to learn the basics of Electron.js",
   "author": "hegdeashwin",
   "license": "MIT",
   "devDependencies": {
