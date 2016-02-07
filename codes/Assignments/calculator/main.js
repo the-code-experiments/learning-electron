@@ -45,7 +45,13 @@ app.on('ready', function() {
   /**
    * Create the new browser window.
    */
-  mainWindow = new BrowserWindow();
+  mainWindow = new BrowserWindow({
+    resizable: false,
+    center: true,
+    title: "Calculator",
+    width: 275,
+    height: 285
+  });
 
   /**
    * Load the index.html of the app.
