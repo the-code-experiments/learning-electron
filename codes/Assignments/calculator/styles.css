@@ -1,0 +1,23 @@
+.calculator td, .calculator th, .calculator tbody {
+  text-align: center;
+}
+
+.calculator button {
+  cursor: pointer
+}
+
+.calculator input.cal-result {
+  width: 90%;
+  text-align: right;
+  padding: 10px;
+}
+
+.calculator button.numbers, .calculator button.backspace {
+  width: 100%;
+  height: 40px;
+}
+
+.calculator button.operators {
+  width: 60px;
+  height: 40px;
+}
